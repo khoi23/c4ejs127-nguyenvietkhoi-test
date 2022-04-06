@@ -32,3 +32,7 @@ function ramdomColor () {
     return `linear-gradient(rgb(${r}, ${g}, ${b}),rgb(${r1}, ${g1}, ${b1}))`
 }
 // linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+btn.addEventListener('click', () =>{
+    let ramdom = ramdomColor();
+    body.style.background = ramdom;
+}) 
