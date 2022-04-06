@@ -7,7 +7,7 @@ setColor();
 input.addEventListener('click', remove)
 input.addEventListener("input", setColor);
 function remove() {
-    body.style.background= '';
+    body.removeAttribute("background")
 }
 function setColor() {
 	body.style.background = input.value;
