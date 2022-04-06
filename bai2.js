@@ -10,7 +10,7 @@ function newNumber2(e) {
     let newNumber2 = [];
     for (let i = 1; i < e.length; i+=2){
         newNumber2.push(e[i]);
-    } return newNumber2;
+    } return newNumber2.reduce((a, b) => a +b);
 }
 console.log(newNumber2(number));
 console.log(newNumber(number));
