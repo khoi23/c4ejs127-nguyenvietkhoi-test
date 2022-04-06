@@ -4,10 +4,13 @@ const colorCode = document.getElementById("colorCode");
 const btn = document.getElementById('btn')
 
 setColor();
+input.addEventListener('click', remove)
 input.addEventListener("input", setColor);
-
+function remove() {
+    body.style.background= '';
+}
 function setColor() {
-	body.style.backgroundColor = input.value;
+	body.style.background = input.value;
 	colorCode.innerHTML = input.value;
 }
 
